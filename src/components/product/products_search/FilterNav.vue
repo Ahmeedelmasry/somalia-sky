@@ -153,13 +153,12 @@
 import ActionBtn from "@/components/global/ActionButton.vue";
 import { storeToRefs } from "pinia";
 import { categoryStore } from "@/stores/categories/categories";
-import { ref, watch, onMounted } from "vue";
+import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 const { categories } = storeToRefs(categoryStore());
 
 // Data
-const category = ref({});
 const priceRange = ref([0, 100]);
 const priceMenu = ref(false);
 

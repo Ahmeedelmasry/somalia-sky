@@ -40,7 +40,7 @@
 <script setup>
 import ProductCard from "@/components/global/ProductCard";
 // import ActionButton from "@/components/global/ActionButton";
-import { defineProps, onMounted, ref } from "vue";
+import { defineProps, ref } from "vue";
 import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import { Pagination, Navigation, Autoplay } from "swiper";
 
@@ -61,7 +61,7 @@ const breakpoints = ref({
   },
 });
 
-const props = defineProps({
+defineProps({
   title: {
     type: String,
   },

@@ -186,7 +186,7 @@
 
 <script setup>
 import ActionButton from "@/components/global/ActionButton.vue";
-import { defineProps, onMounted, ref } from "vue";
+import { defineProps, ref } from "vue";
 import { mainStore } from "@/stores/main";
 import { storeToRefs } from "pinia";
 import { authStore } from "@/stores/auth";
@@ -197,7 +197,7 @@ const { loggerData } = storeToRefs(authStore());
 const { openSignIn } = storeToRefs(mainStore());
 const openSendMessage = ref(false);
 
-const props = defineProps(["adDetails"]);
+defineProps(["adDetails"]);
 
 // Methods
 const sendMessage = async () => {
