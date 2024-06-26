@@ -99,11 +99,14 @@
               alt=""
               width="30"
               @click="fileInp.click()"
+              style="cursor: pointer"
             />
             <v-icon
               size="30"
+              :color="isRecording ? 'red' : 'black'"
               @click="isRecording ? stopRecording() : startRecording()"
-              >mdi-microphone-outline</v-icon
+              >mdi-{{ isRecording ? "pause" : "microphone"
+              }}{{ isRecording ? "" : "-outline" }}</v-icon
             >
             <input
               type="text"
