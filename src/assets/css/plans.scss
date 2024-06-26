@@ -1,0 +1,85 @@
+// Vars
+$mainColor: #013331;
+$mainColorLighten: #013331eb;
+
+.choose_plane {
+  background-color: #e9e9e9;
+  .title {
+    color: $mainColor;
+    font-family: RailwayBold, sans-serif;
+    font-size: 24px;
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+  @media (max-width: 960px) {
+    .title {
+      margin-bottom: 50px;
+    }
+  }
+  .plan_card {
+    border-radius: 20px;
+    .v-card-title {
+      font-family: RailwaySemi, sans-serif;
+      background-color: $mainColor;
+      font-size: 20px;
+      color: white;
+      padding: 18px 0;
+    }
+    .v-card-text {
+      font-family: RailwayRegular, sans-serif;
+      line-height: 1.7;
+    }
+    .price {
+      font-family: RailwayBold, sans-serif;
+      font-size: 30px;
+    }
+    table {
+      border-radius: 16px;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background-color: #0133311c;
+      padding: 25px 0;
+      tr {
+        th,
+        td {
+          padding: 17px 0;
+        }
+      }
+      tbody {
+        tr {
+          &:not(.empty) {
+            transition: 0.2s;
+            cursor: pointer;
+            &:hover {
+              background-color: $mainColor !important;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+    .v-btn {
+      width: 200px;
+      height: 40px !important;
+      .v-btn__content {
+        font-family: RailwaySemi, sans-serif !important;
+      }
+    }
+  }
+
+  .middle_col {
+    margin-top: -40px;
+    .plan_card {
+      background-color: $mainColor;
+    }
+    table {
+      background-color: #fff;
+      color: $mainColor;
+    }
+  }
+  @media (max-width: 960px) {
+    .middle_col {
+      margin-top: 0 !important;
+    }
+  }
+}

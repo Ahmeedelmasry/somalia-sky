@@ -1,0 +1,93 @@
+// Vars
+$mainColor: #013331;
+
+// Global
+button span {
+  font-family: RailwayBold, sans-serif !important;
+}
+
+.v-btn {
+  text-transform: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+.link_hover {
+  transition: 0.1s;
+  padding-bottom: 5px;
+  &:hover {
+    border-bottom: 2px solid $mainColor !important;
+  }
+  &.router-link-active {
+    border-bottom: 2px solid $mainColor;
+  }
+}
+
+.link_hover_dark {
+  transition: 0.1s;
+  padding-bottom: 5px;
+  &:hover {
+    border-bottom: 2px solid white !important;
+  }
+  &.active {
+    border-bottom: 2px solid white !important;
+  }
+}
+
+.m-input {
+  border: 1px solid #0000003b !important;
+  &.--is-focused {
+    border: 2px solid black !important;
+    .m-input-wrapper {
+      border: none !important;
+      outline: none;
+    }
+  }
+}
+
+.m-country-selector {
+  margin-bottom: 24px;
+}
+
+@media (min-width: 425px) {
+  .m-country-selector {
+    margin-bottom: 0 !important;
+  }
+}
+.section_title {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.015em;
+  color: #013331;
+  text-align: center;
+  font-family: RailwayBold, sans-serif !important;
+}
+
+// Download App
+.download_app {
+  background-color: #fff;
+  .v-card {
+    .title {
+      color: $mainColor;
+      font-family: RailwayBold, sans-serif;
+      font-size: 25px;
+    }
+    .desc {
+      color: #1111118e;
+      max-width: 400px;
+    }
+    button {
+      border: 1px solid;
+      padding-right: 40px;
+      width: 200px;
+    }
+  }
+  @media (max-width: 960px) {
+    .desc {
+      max-width: unset !important;
+    }
+  }
+}
+// End Download App

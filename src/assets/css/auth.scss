@@ -1,0 +1,47 @@
+// Vars
+$mainColor: #013331;
+
+.auth_card {
+  .v-card-title {
+    font-family: RailwaySemi, sans-serif;
+    color: $mainColor;
+    font-size: 23px;
+  }
+  .v-card-text {
+    font-family: RailwaySemi, sans-serif;
+    color: $mainColor;
+  }
+  .label {
+    font-family: RailwaySemi, sans-serif;
+    color: $mainColor;
+    font-size: 18px;
+  }
+  .v-btn {
+    width: 150px !important;
+    height: 43px !important;
+  }
+  .btns {
+    .v-btn {
+      padding-right: 30px;
+      border-radius: 5px !important;
+      height: 50px !important;
+    }
+  }
+  .no_acc {
+    color: $mainColor;
+    font-family: RailwaySemi, sans-serif;
+    font-size: 13px;
+    strong {
+      transform: translateY(-1px);
+      display: inline-block;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+  }
+  .resend {
+    font-size: 12px;
+    font-family: RailwaySemi, sans-serif;
+    color: #1a85b8;
+    cursor: pointer;
+  }
+}

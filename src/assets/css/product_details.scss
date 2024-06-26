@@ -1,0 +1,299 @@
+// Vars
+$mainColor: #013331;
+$mainColorLighten: #013331eb;
+
+// Filter Nav
+.filter_nav {
+  background-color: $mainColor;
+  padding: 30px 20px 20px;
+  color: #fcfcfc;
+  .all_cats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    .separator {
+      width: 1px;
+      height: 30px;
+      background-color: #fcfcfc;
+    }
+    .v-btn {
+      background-color: #fcfcfc !important;
+    }
+  }
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+    border-radius: 15px;
+    border: 2px solid white;
+    .v-btn__content {
+      font-family: RailwaySemi, sans-serif !important;
+    }
+  }
+  .breadcrumbs {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}
+
+.breadcrumbs {
+  margin-top: 30px;
+  font-size: 14px;
+}
+.active_category {
+  background-color: $mainColor !important;
+  a {
+    color: white !important;
+  }
+}
+// End Filter Nav
+
+// Product Preview
+.preview_products {
+  .title {
+    color: $mainColor;
+    font-size: 22px;
+    font-family: RailwayBold, sans-serif;
+  }
+  .filters {
+    border-radius: 15px;
+    border: 2px solid $mainColor;
+    padding: 30px 25px;
+    .label {
+      color: $mainColor;
+      margin: 20px 0;
+      font-family: RailwaySemi, sans-serif;
+      font-size: 20px;
+    }
+    .v-chip {
+      background-color: #013331;
+      color: #fcfcfc !important;
+      font-size: 13px !important;
+      padding: 15px;
+      font-family: RailwaySemi, sans-serif;
+    }
+  }
+}
+// End Product Preview
+
+// Send Message
+.contact_info {
+  // background-image: url(../../assets/product/product_details/contact_info_bg.png);
+  background-size: cover;
+  background-color: #013321;
+  background-position: 0 0;
+  min-height: 60vh;
+  display: flex;
+  .contact_info_card {
+    color: #fff;
+    padding: 0 22px 0 15px;
+    .title {
+      font-size: 22px;
+      font-family: RailwayRegular, sans-serif;
+      margin-bottom: 20px;
+    }
+    .cont {
+      font-family: RailwayRegular, sans-serif !important;
+      font-size: 14px;
+      color: #fcfcfcbe;
+    }
+  }
+}
+.contact_section_title {
+  font-size: 26px !important;
+  color: $mainColor;
+}
+.contact_section_text {
+  font-size: 14px !important;
+  color: rgba(0, 0, 0, 0.613) !important;
+  font-family: RailwayRegular, sans-serif;
+}
+// End Send Message
+
+// Product Details
+// Banner
+.product_details {
+  .cover_img_parent {
+    height: 300px;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    .title {
+      color: white !important;
+      font-size: 27px;
+      margin-bottom: 25px;
+    }
+    .breadcrumbs {
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.792);
+      letter-spacing: 0.1rem;
+    }
+  }
+  .title {
+    font-size: 24px;
+    font-family: RailwaySemi, sans-serif;
+    color: $mainColor;
+  }
+  .location_parent {
+    span {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.613);
+      letter-spacing: 0.01rem;
+    }
+    i {
+      color: rgba(0, 0, 0, 0.613);
+    }
+  }
+  .product_gallary {
+    .gallary_main_img_parent {
+      img {
+        height: 550px;
+        object-fit: cover;
+        width: 100%;
+      }
+    }
+    .gallary_primary_img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+    }
+  }
+  .product_desc {
+    .desc {
+      font-size: 18px;
+      font-family: RailwaySemi, sans-serif;
+      line-height: 35px;
+      color: rgba(0, 0, 0, 0.634);
+    }
+  }
+  .product_features {
+    span {
+      font-size: 18px;
+      font-family: RailwaySemi, sans-serif;
+      line-height: 35px;
+      color: rgba(0, 0, 0, 0.634);
+    }
+  }
+  .side_filters .first_filter,
+  .side_filters .second_filter {
+    border: 2px solid $mainColor;
+    border-radius: 15px;
+    padding: 40px 0;
+    .price {
+      padding: 0 25px;
+      span {
+        font-size: 20px;
+        color: $mainColor;
+        font-family: RailwaySemi, sans-serif;
+      }
+      i {
+        background-color: $mainColor;
+        border-radius: 50%;
+        width: 30px !important;
+        height: 30px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1px 0 0 0 !important;
+        color: #fcfcfc85;
+      }
+    }
+    .phone {
+      padding: 0 12px;
+      .parent {
+        padding: 15px;
+        border-radius: 7px;
+        background-color: #11111121;
+        i {
+          color: #29a7a2 !important;
+        }
+        .num {
+          color: $mainColorLighten;
+        }
+        .reveal {
+          margin-top: 15px;
+          font-size: 13px;
+          padding-left: 5px;
+          color: rgba(0, 0, 0, 0.632);
+        }
+      }
+    }
+    .send_msg_btn {
+      button {
+        width: 100% !important;
+        .v-btn__content {
+          font-family: RailwayRegular, sans-serif !important;
+          font-size: 16px;
+        }
+        img {
+          width: 23px;
+          margin-right: 7px;
+        }
+      }
+    }
+    .avatar_parent {
+      .cont {
+        span {
+          color: rgba(0, 0, 0, 0.52);
+          font-size: 14px;
+        }
+        div {
+          color: $mainColor;
+        }
+      }
+    }
+    .email,
+    .location {
+      span {
+        color: rgba(0, 0, 0, 0.686);
+        font-size: 13px;
+      }
+    }
+    .ad_location {
+      .sec_title {
+        color: $mainColor;
+        font-family: RailwaySemi, sans-serif;
+        font-size: 18px;
+      }
+    }
+    .overview {
+      .sec_title {
+        color: $mainColor;
+        font-family: RailwaySemi, sans-serif;
+        font-size: 18px;
+      }
+      .row_parent {
+        color: $mainColor;
+        .row_title {
+          font-family: RailwaySemi, sans-serif;
+        }
+      }
+    }
+    .report {
+      opacity: 0.7;
+      span {
+        margin-top: 1px;
+      }
+    }
+    .social_media {
+      .sec_title {
+        span {
+          color: $mainColor;
+          font-size: 16px;
+          font-family: RailwaySemi, sans-serif !important;
+        }
+      }
+    }
+  }
+}
+// End Banner

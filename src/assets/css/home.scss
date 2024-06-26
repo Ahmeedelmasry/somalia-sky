@@ -1,0 +1,253 @@
+// Vars
+$mainColor: #013331;
+$mainColorLighten: #013331eb;
+
+// Banner
+.home_banner {
+  .swiper-button-prev {
+    color: white;
+    left: 90px !important;
+    &::after {
+      font-size: 30px !important;
+    }
+  }
+  .swiper-button-next {
+    color: white;
+    right: 90px !important;
+    &::after {
+      font-size: 30px !important;
+    }
+  }
+  .swiper-pagination {
+    bottom: 70px !important;
+    .swiper-pagination-bullet {
+      background-color: white !important;
+      width: 40px;
+      border-radius: 3px !important;
+      height: 8px;
+      border: 1px solid white !important;
+      margin: 0 15px !important;
+      opacity: 1;
+      &:not(.swiper-pagination-bullet-active) {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+// End Banner
+
+// Recommended Ads
+.recommended_ads {
+  button {
+    .v-btn__content {
+      font-family: RailwaySemi, sans-serif !important;
+    }
+  }
+}
+.product_card {
+  .v-card {
+    background-color: white;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+    overflow: visible;
+    box-shadow: 0px 0px 7px 0px #0000004f !important;
+    .like_icon {
+      z-index: 1;
+      background-color: white;
+      border-radius: 50%;
+      width: 40px !important;
+      height: 40px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      box-shadow: 0px 0px 7px 0px #00000016 !important;
+      position: absolute;
+      top: -14px;
+      right: -14px;
+    }
+
+    .img_parent {
+      img {
+        width: 100%;
+      }
+    }
+    .cat_label {
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0.015em;
+      color: rgba(17, 17, 17, 0.661);
+    }
+    .ad_desc,
+    .location_label {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 400;
+      font-size: 14px;
+      letter-spacing: 0.015em;
+      color: #111111;
+    }
+    .card_body {
+      .location_label {
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.015em;
+        color: rgba(17, 17, 17, 0.754);
+      }
+      .price {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.015em;
+        color: #1a85b8;
+      }
+    }
+    .btns {
+      .v-btn {
+        box-shadow: 0px 0px 7px 0px #0000002c !important;
+        .v-btn__content {
+          font-family: RailwaySemi, sans-serif !important;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+.shop_card {
+  background-color: white;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+  overflow: visible;
+  box-shadow: 0px 0px 7px 0px #0000004f !important;
+  .shop_name {
+    color: rgba(17, 17, 17, 0.504);
+    font-size: 14px;
+  }
+  a {
+    span {
+      color: $mainColor;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  }
+  .card {
+    box-shadow: 0px 0px 7px 0px #0000004f !important;
+    border-radius: 12px !important;
+    .img_parent {
+      img {
+        width: 100%;
+        max-height: 120px;
+      }
+    }
+    .ad_desc,
+    .location_label {
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 400;
+      font-size: 12px;
+      letter-spacing: 0.015em;
+      color: #111111;
+    }
+    .card_body {
+      .location_label {
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: 0.015em;
+        color: rgba(17, 17, 17, 0.754);
+      }
+      .price {
+        font-weight: 400;
+        font-size: 15px;
+        letter-spacing: 0.015em;
+        color: #1a85b8;
+      }
+    }
+    .btns {
+      .v-btn {
+        box-shadow: 0px 0px 7px 0px #0000002c !important;
+        .v-btn__content {
+          font-family: RailwaySemi, sans-serif !important;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}
+// End Recommended Ads
+
+// Locations
+.location_card {
+  .card {
+    position: relative;
+    height: 210px;
+    border: 1px solid $mainColor;
+    border-radius: 15px;
+    margin-bottom: 80px;
+    .img_parent {
+      position: absolute;
+      width: 80%;
+      top: -40%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 20px;
+      overflow: hidden;
+      img {
+        width: 100%;
+        object-fit: contain;
+        max-height: 190px;
+      }
+    }
+    .card_body {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      .title {
+        font-weight: 500;
+        font-family: RailwaySemi, sans-serif;
+        font-size: 18px;
+        line-height: 140.02%;
+        letter-spacing: 0.015em;
+        color: $mainColor;
+      }
+      .ads {
+        color: rgba(0, 0, 0, 0.589);
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    }
+  }
+}
+// End Locations
+
+// Premium Membership
+.prem_membership {
+  .v-card {
+    background-color: $mainColorLighten;
+    padding: 60px 40px;
+    border-radius: 20px;
+    .title {
+      color: white;
+      font-family: RailwaySemi, sans-serif;
+      margin-bottom: 20px;
+    }
+    .desc {
+      color: rgba(255, 255, 255, 0.686);
+      font-size: 14px;
+      max-width: 300px;
+    }
+    button {
+      .v-btn__content {
+        font-family: RailwaySemi, sans-serif !important;
+      }
+    }
+  }
+}
+// End Premium Membership

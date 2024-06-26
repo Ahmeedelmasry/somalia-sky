@@ -1,0 +1,52 @@
+// Vars
+$mainColor: #013331;
+$mainColorLighten: #013331eb;
+
+.shop_details {
+  .details_card {
+    box-shadow: -1px -1px 9px rgba(1, 51, 49, 0.12),
+      1px 1px 18px rgba(1, 51, 49, 0.12);
+    border-radius: 12px;
+    .title {
+      font-size: 30px;
+      font-family: RailwaySemi, sans-serif;
+      color: $mainColor;
+    }
+    .location {
+      font-size: 15px;
+      font-family: RailwaySemi, sans-serif;
+      color: rgba(0, 0, 0, 0.66);
+    }
+  }
+  .sec_title {
+    color: $mainColor;
+    font-family: RailwaySemi, sans-serif;
+    font-size: 18px;
+  }
+  .btns {
+    .v-btn {
+      height: 43px !important;
+      .v-btn__content {
+        font-size: 12px !important;
+        font-family: RailwayRegular, sans-serif !important;
+      }
+    }
+  }
+  .second_filter {
+    .details_card {
+      .v-btn {
+        height: 43px !important;
+        .v-btn__content {
+          font-size: 12px !important;
+          font-family: RailwayRegular, sans-serif !important;
+        }
+      }
+    }
+    .hint {
+      color: $mainColor;
+      font-family: RailwaySemi, sans-serif !important;
+      margin-bottom: 5px;
+      font-size: 17px;
+    }
+  }
+}

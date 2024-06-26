@@ -1,0 +1,111 @@
+// Vars
+$mainColor: #013331;
+
+// Start Navbar
+.app_nav {
+  .nav_search {
+    text-align: center;
+    input {
+      width: 441px;
+      height: 50px;
+      background: #fcfcfc;
+      border: 1.5px solid #01333185;
+      border-radius: 11px;
+      outline: none;
+      padding: 0 20px 0 40px;
+      &::placeholder {
+        color: rgba(1, 51, 49, 0.47);
+      }
+    }
+  }
+  .links {
+    display: flex;
+    position: relative;
+    gap: 50px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -30px;
+      height: 30px;
+      top: -5px;
+      width: 1px;
+      background-color: $mainColor;
+      opacity: 0.5;
+      z-index: 1;
+    }
+    li {
+      color: $mainColor;
+      font-weight: 500;
+      font-size: 15px;
+      font-family: RailwaySemi, sans-serif !important;
+      a {
+        color: $mainColor;
+        font-weight: 500;
+        font-size: 15px;
+        font-family: RailwaySemi, sans-serif !important;
+      }
+    }
+    &.no_search {
+      &::before {
+        left: -7px;
+        height: 70px;
+        top: -25px;
+      }
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .links {
+      &::before {
+        display: none;
+      }
+      li {
+        font-size: 13px;
+      }
+    }
+  }
+}
+// End Navbar
+
+// Start Footer
+footer {
+  background: $mainColor !important;
+  color: #fcfcfcd0 !important;
+  .logo_col {
+    .cont {
+      p {
+        margin-top: 20px;
+        padding-left: 5px;
+        font-weight: 300 I !important;
+      }
+    }
+  }
+  .footer_heading {
+    color: white !important;
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    flex-direction: column;
+  }
+}
+.copyrights {
+  background-color: #111111 !important;
+  font-size: 12px;
+  color: #fcfcfca3;
+  letter-spacing: 0.02rem;
+  padding: 10px;
+  min-height: 50px;
+  .separator {
+    width: 1px;
+    display: inline-block;
+    height: 10px;
+    background-color: #fcfcfc58;
+    margin: 0 10px;
+  }
+}
+// End Footer

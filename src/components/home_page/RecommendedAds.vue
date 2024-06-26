@@ -1,0 +1,77 @@
+<template>
+  <div
+    class="recommended_ads mt-5 pt-10"
+    :style="`background-color: ${bgColor}`"
+  >
+    <h2 :class="['section_title', `text-${alignment || 'center'}`]">
+      {{ title }}
+    </h2>
+    <v-container class="px-md-16 px-5 mt-10 pb-16" fluid>
+      <v-row>
+        <v-col cols="12" sm="6" md="4" lg="3" v-for="ad in ads" :key="ad.id">
+          <ProductCard
+            :ad="ad"
+            @card_clicked="
+              $router.push({
+                name: 'productDetails',
+                params: { id: $event.id, catId: $event.subcategory.id },
+              })
+            "
+          />
+        </v-col>
+        <v-col cols="12" class="text-center mt-10" v-if="showBtn">
+          <action-button
+            text="View All"
+            bgColor="#013331"
+            textColor="#fff"
+            direction="end"
+            weight="400"
+            @click="$router.push({ name: 'productsSearch' })"
+          >
+            <img
+              src="@/assets/SVGS/home/arrow_right.svg"
+              alt=""
+              width="20"
+              class="ms-4"
+            />
+          </action-button>
+        </v-col>
+        <v-col cols="12" class="mt-15 mb-10" v-if="line">
+          <v-divider></v-divider>
+          <v-divider></v-divider>
+          <v-divider></v-divider>
+        </v-col>
+      </v-row>
+    </v-container>
+  </div>
+</template>
+
+<script setup>
+import ProductCard from "@/components/global/ProductCard";
+import ActionButton from "@/components/global/ActionButton";
+import { defineProps } from "vue";
+
+defineProps({
+  title: {
+    type: String,
+  },
+  bgColor: {
+    type: String,
+  },
+  num: {
+    type: Number,
+  },
+  line: {
+    type: Boolean,
+  },
+  showBtn: {
+    type: Boolean,
+  },
+  alignment: {
+    type: String,
+  },
+  ads: {
+    type: Array,
+  },
+});
+</script>
