@@ -55,7 +55,6 @@ const loading = ref(true);
 watch(
   () => route,
   () => {
-    console.log(route.name);
     if (route.name == "productDetails") {
       getData();
     }

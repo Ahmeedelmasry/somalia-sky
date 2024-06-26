@@ -22,7 +22,6 @@ export const adDetailStore = defineStore("adDetailStore", {
             images.push(obj);
           }
           res.data.data.images = images;
-          console.log(res.data.data, "Ad Details");
           this.adDetails = res.data.data;
         })
         .catch((err) => {

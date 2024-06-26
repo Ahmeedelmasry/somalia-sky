@@ -204,8 +204,4 @@ const sendMessage = async () => {
   if (!loggerData.value.id) return (openSignIn.value = true);
   openSendMessage.value = true;
 };
-
-onMounted(() => {
-  console.log(props.adDetails, "det");
-});
 </script>

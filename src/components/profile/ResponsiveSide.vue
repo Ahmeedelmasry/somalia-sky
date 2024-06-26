@@ -169,9 +169,6 @@ const links = ref([
       </defs>
       </svg>
       `,
-    clicked: () => {
-      console.log("deleteAccount");
-    },
   },
 ]);
 

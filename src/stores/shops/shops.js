@@ -41,7 +41,6 @@ export const shopStore = defineStore("shopStore", {
             });
           });
           this.shops = res.data;
-          console.log("Public Shops", res.data.data);
         })
         .catch((err) => {
           if (!err.response) {
@@ -88,7 +87,6 @@ export const shopStore = defineStore("shopStore", {
             });
           });
           this.profileShops = res.data.data;
-          console.log("Profile Shops", this.profileShops);
         })
         .catch((err) => {
           if (!err.response) {
@@ -128,7 +126,6 @@ export const shopStore = defineStore("shopStore", {
             }
             ad.images = images;
           });
-          console.log(res.data.data, "Shop Details");
           this.shopDetails = res.data.data;
         })
         .catch((err) => {

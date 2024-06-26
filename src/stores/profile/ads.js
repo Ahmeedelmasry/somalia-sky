@@ -30,7 +30,6 @@ export const profileAdStore = defineStore("profileAdStore", {
             ad.images = images;
           });
           this.ads = res.data;
-          console.log("Profile Ads", res.data.data);
         })
         .catch((err) => {
           if (!err.response) {

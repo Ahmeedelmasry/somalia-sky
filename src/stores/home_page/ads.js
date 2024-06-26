@@ -24,7 +24,6 @@ export const homeAdStore = defineStore("homeAdStore", {
             ad.images = images;
           });
           this.ads = res.data.data;
-          console.log("Homepage Ads", res.data.data);
         })
         .catch((err) => {
           console.log(err);

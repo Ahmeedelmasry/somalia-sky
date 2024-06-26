@@ -72,7 +72,6 @@ export const chatStore = defineStore("chatStore", {
         })
         .then((res) => {
           this.rooms = res.data;
-          console.log(res.data);
         })
         .catch((err) => console.log(err));
     },
@@ -84,8 +83,14 @@ export const chatStore = defineStore("chatStore", {
           },
         })
         .then((res) => {
+          res.data.chat.messages.forEach((el) => {
+            let file = {};
+            for (const val of Object.entries(el.attach)) {
+              file = val[1];
+            }
+            el.file = file;
+          });
           this.chatDetails = res.data.chat;
-          console.log(res.data.chat, "chatDetails");
         })
         .catch((err) => console.log(err));
     },

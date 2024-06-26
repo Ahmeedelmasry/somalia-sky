@@ -48,7 +48,6 @@ export const profileFavStore = defineStore("profileFavStore", {
           },
         })
         .then((res) => {
-          console.log(res.data);
           mainStore().handleErr(
             "success",
             `${

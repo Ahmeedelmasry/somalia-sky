@@ -8,7 +8,6 @@ export const adSearchStore = defineStore("adSearchStore", {
   }),
   actions: {
     async getAdsResults(filters) {
-      console.log(filters);
       await axios
         .get(
           `${mainStore().apiURL}/public/ads/sort/filteration?${
@@ -31,7 +30,6 @@ export const adSearchStore = defineStore("adSearchStore", {
             ad.images = images;
           });
           this.ads_results = res.data.data;
-          console.log("Search Ads", res.data.data);
         })
         .catch((err) => {
           console.log(err);

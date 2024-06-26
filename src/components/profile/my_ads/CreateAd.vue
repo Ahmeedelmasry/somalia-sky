@@ -58,8 +58,6 @@
                             v-model="formData.shop_id"
                             clearable
                             class="mb-2"
-                            :error="v$.shop_id.$error"
-                            :errorMessages="v$.shop_id.$errors[0]?.$message"
                           ></v-autocomplete>
                           <v-text-field
                             class="mb-2"
@@ -276,7 +274,6 @@ const validationRoles = computed(() => {
   return {
     subcategory_id: { required },
     name: { required },
-    shop_id: { required },
     location: { required },
     description: { required },
     price: { required, numeric },
@@ -328,7 +325,9 @@ const submitForm = async () => {
 
     for (const val of Object.entries(data)) {
       if (val[0] != "images") {
-        newForm.append(val[0], val[1]);
+        if (val[1]) {
+          newForm.append(val[0], val[1]);
+        }
       }
     }
 

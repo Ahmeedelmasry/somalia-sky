@@ -105,7 +105,6 @@ export const authStore = defineStore("authStore", {
         .then((res) => {
           this.loggerData = res.data.data;
           result = true;
-          console.log(this.loggerData, "Logger Data");
         })
         .catch((err) => {
           if (err.response.status == 401) {

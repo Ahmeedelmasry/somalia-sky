@@ -11,7 +11,6 @@ export const billingStore = defineStore("billingStore", {
       await axios
         .get(`${mainStore().apiURL}/packages`)
         .then((res) => {
-          console.log(res.data.data);
           this.plans = res.data.data;
         })
         .catch((err) => {

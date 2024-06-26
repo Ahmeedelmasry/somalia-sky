@@ -163,14 +163,6 @@ const category = ref({});
 const priceRange = ref([0, 100]);
 const priceMenu = ref(false);
 
-watch(
-  () => category.value,
-  (newVal) => {
-    console.log(newVal);
-  },
-  { deep: true }
-);
-
 onMounted(() => {
   if (useRoute().query.mi) {
     priceRange.value[0] = useRoute().query.mi;

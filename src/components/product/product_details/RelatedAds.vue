@@ -84,8 +84,4 @@ const props = defineProps({
     type: Array,
   },
 });
-
-onMounted(() => {
-  console.log(props.ads);
-});
 </script>

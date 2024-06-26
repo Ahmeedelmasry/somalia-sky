@@ -21,7 +21,6 @@ export const homeLocationStore = defineStore("homeLocationStore", {
             });
           }
           this.locations = res.data.data;
-          console.log(res.data.data, "Locations");
         })
         .catch((err) => {
           console.log(err);

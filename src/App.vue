@@ -23,7 +23,6 @@ const { createAd } = storeToRefs(profileAdStore());
 watch(
   () => createAd.value,
   (newVal) => {
-    console.log(newVal);
     if (newVal) {
       shopStore().getProfileShops();
     }
